@@ -5,7 +5,7 @@ function Consulta_cep(){
     $.ajax({
         url: url,
         type: "GET",
-        success: function(response){
+        success: (response) => {
             $("#resultado").html(response.cep);
             $("#resultado1").html(response.uf);
             $("#resultado2").html(response.localidade);
@@ -15,6 +15,6 @@ function Consulta_cep(){
         }
     })
 }
-$(function(){
+$(() => {
     $(".progresso").hide(0);
 })
