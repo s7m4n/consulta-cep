@@ -1,7 +1,7 @@
 function Consulta_cep(){
     $(".progresso").show(0);
-    cep = document.getElementById("cep").value;
-    url = "https://viacep.com.br/ws/" + cep +"/json/";
+    const cep = document.getElementById("cep").value;
+    const url = "https://viacep.com.br/ws/" + cep +"/json/";
     $.ajax({
         url: url,
         type: "GET",
